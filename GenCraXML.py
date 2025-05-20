@@ -145,8 +145,20 @@ def generate_experiment_action(run, main_doc):
     spuid_element.appendChild(main_doc.createTextNode(run['exp_acc']))
     identifier_element.appendChild(spuid_element)
     add_data_element.appendChild(identifier_element)
-
     action_element.appendChild(add_data_element)
+
+    # experiment link
+    exp_link_element = main_doc.createElement("EXPERIMENT_LINK")
+    url_link_element = main_doc.createElement("URL_LINK")
+    label_element = main_doc.createElement("LABEL")
+    label_element.appendChild(main_doc.createTextNode(f"GSA {run['exp_acc']}, NGDC"))
+    url_link_element.appendChild(label_element)
+    url_element = main_doc.createElement("URL")
+    url_element.appendChild(main_doc.createTextNode(f"https://ngdc.cncb.ac.cn/gsa/browse/{run['cra_acc']}/{run['exp_acc']}"))
+    url_link_element.appendChild(url_element)
+    exp_link_element.appendChild(url_link_element)
+    action_element.appendChild(exp_link_element)
+
     return action_element
 
 
@@ -200,8 +212,20 @@ def generate_run_action(run, main_doc):
     spuid_element.appendChild(main_doc.createTextNode(run['run_acc']))
     identifier_element.appendChild(spuid_element)
     add_files_element.appendChild(identifier_element)
-
     action_element.appendChild(add_files_element)
+
+    # experiment link
+    run_link_element = main_doc.createElement("RUN_LINK")
+    url_link_element = main_doc.createElement("URL_LINK")
+    label_element = main_doc.createElement("LABEL")
+    label_element.appendChild(main_doc.createTextNode(f"GSA {run['run_acc']}, NGDC"))
+    url_link_element.appendChild(label_element)
+    url_element = main_doc.createElement("URL")
+    url_element.appendChild(main_doc.createTextNode(f"https://ngdc.cncb.ac.cn/gsa/browse/{run['cra_acc']}/{run['run_acc']}"))
+    url_link_element.appendChild(url_element)
+    run_link_element.appendChild(url_link_element)
+    action_element.appendChild(run_link_element)
+
     return action_element
 
 
@@ -325,7 +349,7 @@ def main():
 
 def debug_fun():
     mysql_con = MysqlUtils()
-    cra_acc = 'CRA000095'
+    cra_acc = 'CRA012722'
     xml_dir = "XML"
 
     generate_cra_xml(cra_acc, xml_dir, mysql_con)

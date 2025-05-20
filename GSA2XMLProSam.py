@@ -376,6 +376,7 @@ class MysqlUtils(object):
         # 20230928 添加了and run_data_type_id in (1,2)，这样只保证交换fq和bam，也只转这部分得元信息
         sql = """
         SELECT 
+            %s AS cra_acc,
             rdf.run_file_id AS rdf_run_file_id, 
             rdf.run_file_name AS rdf_run_file_name, 
             rdf.archived_file_name AS rdf_archive_file_name,
@@ -432,7 +433,7 @@ class MysqlUtils(object):
         WHERE 
             status = 10 AND run_data_type IN (1, 2);
         """
-        self.excute(sql, cra)
+        self.excute(sql, (cra, cra))
         res = self.fetchAll()
 
         if res is None:
