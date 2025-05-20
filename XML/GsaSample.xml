@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<Submission>
+		<Description>
+			<Comment>NGDC to DDBJ data transfer: BioSample</Comment>
+			<Organization role="owner" type="institute">
+				<Name>China National Center for Bioinformation</Name>
+				<Contact email="wangyanqing@big.ac.cn">
+					<Name>
+						<First>Yanqing</First>
+						<Last>Wang</Last>
+					</Name>
+				</Contact>
+			</Organization>
+			<Hold release_date="2025-03-14"/>
+		</Description>
+		<Action>
+			<AddData target_db="BioSample">
+				<Data content_type="xml">
+					<XmlContent >
+						<BioSample schema_version="2.0">
+							<SampleId>
+								<SPUID spuid_namespace="NGDC">SAMC3205962: D-OsP1-bc</SPUID>
+							</SampleId>
+							<Descriptor>
+								<Title>D-OsP1-bc</Title>
+							</Descriptor>
+							<Organism>
+								<OrganismName>Oryza sativa</OrganismName>
+							</Organism>
+							<Package>Plant.1.0</Package>
+							<Attributes>
+								<Attribute attribute_name="cultivar">Japonica</Attribute>
+								<Attribute attribute_name="biomaterial_provider">Sanjie Institute of Forage, Yangling</Attribute>
+								<Attribute attribute_name="tissue">leaf</Attribute>
+								<Attribute attribute_name="age">1 month</Attribute>
+								<Attribute attribute_name="dev_stage">tillering stage</Attribute>
+							</Attributes>
+						</BioSample>
+					</XmlContent >
+				</Data>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC">SAMC3205962: D-OsP1-bc</SPUID>
+				</Identifier>
+				<RelatedProject>
+					<ProjectID>
+						<SPUID spuid_namespace="NGDC">PRJCA021730</SPUID>
+					</ProjectID>
+				</RelatedProject>
+				<ReleaseDate>2023-12-01</ReleaseDate>
+				<Submitter>
+					<Organization>Sanjie Institute of Forage, Yangling</Organization>
+					<Email>18298534697@163.com</Email>
+					<Name>
+						<First>Yongqiang</First>
+						<Middle></Middle>
+						<Last>Wang</Last>
+					</Name>
+				</Submitter>
+			</AddData>
+		</Action>
+	</Submission>

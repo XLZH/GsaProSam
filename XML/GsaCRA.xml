@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<Submission>
+		<Descriptor>
+			<Comment>GSA to DRA Data submission. GSA accession: CRA012722</Comment>
+			<Title>ATAC sequencing of Gossypium hirsutum Jin668 hypocotyl during somatic embryogenesis</Title>
+			<Description>ATAC sequencing of Gossypium hirsutum Jin668 hypocotyl during somatic embryogenesis</Description>
+			<Submitter>
+				<Organization>National Key Laboratory of Crop Genetic Improvement, Huazhong Agricultural University</Organization>
+				<Email>xzp@mail.hzau.edu.cn</Email>
+				<Name>
+					<First>Zhongping</First>
+					<Middle></Middle>
+					<Last>Xu</Last>
+				</Name>
+			</Submitter>
+			<SubmissionDate>2023-09-21</SubmissionDate>
+			<ReleaseDate>2023-09-21</ReleaseDate>
+			<Identifier>
+				<SPUID spuid_namespace="NGDC" db="GSA">CRA012722</SPUID>
+			</Identifier>
+			<AttributeRefId name="BioProject">
+				<RefId>
+					<SPUID spuid_namespace="NGDC" db="BioProject">PRJCA020000</SPUID>
+				</RefId>
+			</AttributeRefId>
+		</Descriptor>
+		<Action>
+			<AddData target_object="Experiment">
+				<Attribute name="title">J0_1</Attribute>
+				<Attribute name="instrument_model">Illumina HiSeq 4000</Attribute>
+				<Attribute name="library_source">GENOMIC</Attribute>
+				<Attribute name="library_selection">RANDOM</Attribute>
+				<Attribute name="library_strategy">ATAC-seq</Attribute>
+				<Attribute name="library_name"></Attribute>
+				<Attribute name="library_construction_protocol">ATAC-seq</Attribute>
+				<Attribute name="insert_size"></Attribute>
+				<Attribute name="library_layout">PAIRED</Attribute>
+				<AttributeRefId name="BioSample">
+					<RefId>
+						<SPUID spuid_namespace="NGDC" db="BioSample">SAMC3073368</SPUID>
+					</RefId>
+				</AttributeRefId>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC" db="GSA">CRX797519</SPUID>
+				</Identifier>
+			</AddData>
+		</Action>
+		<Action>
+			<AddData target_object="Experiment">
+				<Attribute name="title">J0_2</Attribute>
+				<Attribute name="instrument_model">Illumina HiSeq 4000</Attribute>
+				<Attribute name="library_source">GENOMIC</Attribute>
+				<Attribute name="library_selection">RANDOM</Attribute>
+				<Attribute name="library_strategy">ATAC-seq</Attribute>
+				<Attribute name="library_name"></Attribute>
+				<Attribute name="insert_size"></Attribute>
+				<Attribute name="library_construction_protocol">ATAC-seq</Attribute>
+				<Attribute name="library_layout">PAIRED</Attribute>
+				<AttributeRefId name="BioSample">
+					<RefId>
+						<SPUID spuid_namespace="NGDC" db="BioSample">SAMC3073369</SPUID>
+					</RefId>
+				</AttributeRefId>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC" db="GSA">CRX797520</SPUID>
+				</Identifier>
+			</AddData>
+		</Action>
+		<Action>
+			<AddFiles target_object="Run">
+				<title>Illumina PE150 sequencing of Gossypium hirsutum Jin668 during somatic embryogenesis: 0HAI_rep1</title>
+				<fileType>fastq</fileType>
+				<File file_path="CRR884120_f1.fq.gz">
+					<MD5Checksum>a32249cbe7a9a08173fd9c0eb0689baa</MD5Checksum>
+				</File>
+				<File file_path="CRR884120_r2.fq.gz">
+					<MD5Checksum>e4108bdebbf7580b50139cd884d60d00</MD5Checksum>
+				</File>
+				<AttributeRefId name="Experiment">
+					<RefId>
+						<SPUID spuid_namespace="NGDC" db="GSA">CRX797519</SPUID>
+					</RefId>
+				</AttributeRefId>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC" db="GSA">CRR884120</SPUID>
+				</Identifier>
+			</AddFiles>
+		</Action>
+		<Action>
+			<AddFiles target_object="Run">
+				<title>Illumina PE150 sequencing of Gossypium hirsutum Jin668 during somatic embryogenesis: 0.5HAI_rep2</title>
+				<fileType>fastq</fileType>
+				<File file_path="CRR884121_f1.fq.gz">
+					<MD5Checksum>5f5e2761536eb06ea9facbdaebbfdf49</MD5Checksum>
+				</File>
+				<File file_path="CRR884121_r2.fq.gz">
+					<MD5Checksum>fb8a9318f6d7e07a3f3e69ad65fa5413</MD5Checksum>
+				</File>
+				<AttributeRefId name="Experiment">
+					<RefId>
+						<SPUID spuid_namespace="NGDC" db="GSA">CRX797520</SPUID>
+					</RefId>
+				</AttributeRefId>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC" db="GSA">CRR884121</SPUID>
+				</Identifier>
+			</AddFiles>
+		</Action>
+	</Submission>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<Submission>
+		<Description>
+			<Comment>NGDC to DDBJ data transfer: BioProject</Comment>
+			<Organization role="owner" type="institute">
+				<Name>China National Center for Bioinformation</Name>
+				<Contact email="wangyanqing@big.ac.cn">
+					<Name>
+						<First>Yanqing</First>
+						<Last>Wang</Last>
+					</Name>
+				</Contact>
+			</Organization>
+			<Hold release_date="2025-03-14"/>
+		</Description>
+		<Action>
+			<AddData target_db="BioProject">
+				<Data content_type="xml">
+					<XmlContent >
+						<Project schema_version="2.0">
+							<ProjectID>
+								<SPUID spuid_namespace="NGDC">PRJCA021730</SPUID>
+							</ProjectID>
+							<Descriptor>
+								<Title>Off-target efficiency assessment</Title>
+								<Description>
+									<p>Rice Whole genome sequencing to assess off-target effects</p>
+								</Description>
+								<ExternalLink>
+									<URL>https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA021730</URL>
+								</ExternalLink>
+								<Relevance>
+									<Agricultural>Yes</Agricultural>
+								</Relevance>
+							</Descriptor>
+							<ProjectType>
+								<ProjectTypeSubmission sample_scope="eMultiisolate">
+									<Organism>
+										<OrganismName>Oryza sativa</OrganismName>
+									</Organism>
+									<IntendedDataTypeSet>
+										<DataType>other</DataType>
+									</IntendedDataTypeSet>
+								</ProjectTypeSubmission>
+							</ProjectType>
+						</Project>
+					</XmlContent >
+				</Data>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC">PRJCA021730</SPUID>
+				</Identifier>
+				<ReleaseDate>2023-12-01</ReleaseDate>
+				<Submitter>
+					<Organization>Sanjie Institute of Forage, Yangling</Organization>
+					<Email>18298534697@163.com</Email>
+					<Name>
+						<First>Yongqiang</First>
+						<Middle></Middle>
+						<Last>Wang</Last>
+					</Name>
+				</Submitter>
+			</AddData>
+		</Action>
+		<Action>
+			<AddData target_db="BioProject">
+				<Data content_type="xml">
+					<XmlContent >
+						<Project schema_version="2.0">
+							<ProjectID>
+								<SPUID spuid_namespace="NGDC">PRJCA036869</SPUID>
+							</ProjectID>
+							<Descriptor>
+								<Title>Genome sequencing, resequencing, RNAseq rawdata and the genome assembly of Elymus nutans.</Title>
+								<Description>
+									<p>Genome sequencing, resequencing, RNAseq rawdata and the genome assembly of Elymus nutans.</p>
+								</Description>
+								<ExternalLink>
+									<URL>https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA036869</URL>
+								</ExternalLink>
+								<Relevance>
+									<Evolution>Yes</Evolution>
+								</Relevance>
+							</Descriptor>
+							<ProjectType>
+								<ProjectTypeSubmission sample_scope="eMultiisolate">
+									<Organism>
+										<OrganismName>Campeiostachys nutans</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus abolinii</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus antiquus</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus burchan-buddae</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Campeiostachys dahurica</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Campeiostachys dahurica var. excelsa</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus fedtschenkoi</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus lanceolatus</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Hordeum bogdanii</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Hordeum pusillum</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Hordeum roshevitzii</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Hordeum stenostachys</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus cognatus</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Pseudoroegneria gracillima</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus libanoticus</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Pseudoroegneria spicata</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus stipifolius</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Elymus tauri</OrganismName>
+									</Organism>
+									<Organism>
+										<OrganismName>Arabidopsis thaliana</OrganismName>
+									</Organism>
+									<IntendedDataTypeSet>
+										<DataType>other</DataType>
+									</IntendedDataTypeSet>
+								</ProjectTypeSubmission>
+							</ProjectType>
+						</Project>
+					</XmlContent >
+				</Data>
+				<Identifier>
+					<SPUID spuid_namespace="NGDC">PRJCA036869</SPUID>
+				</Identifier>
+				<ReleaseDate>2025-03-03</ReleaseDate>
+				<Submitter>
+					<Organization>Sichuan Agricultural University</Organization>
+					<Email>xiongyi95@126.com</Email>
+					<Name>
+						<First>Yi</First>
+						<Middle></Middle>
+						<Last>Xiong</Last>
+					</Name>
+				</Submitter>
+			</AddData>
+		</Action>
+	</Submission>
