@@ -145,7 +145,6 @@ def generate_experiment_action(run, main_doc):
     spuid_element.appendChild(main_doc.createTextNode(run['exp_acc']))
     identifier_element.appendChild(spuid_element)
     add_data_element.appendChild(identifier_element)
-    action_element.appendChild(add_data_element)
 
     # experiment link
     exp_link_element = main_doc.createElement("EXPERIMENT_LINK")
@@ -157,8 +156,9 @@ def generate_experiment_action(run, main_doc):
     url_element.appendChild(main_doc.createTextNode(f"https://ngdc.cncb.ac.cn/gsa/browse/{run['cra_acc']}/{run['exp_acc']}"))
     url_link_element.appendChild(url_element)
     exp_link_element.appendChild(url_link_element)
-    action_element.appendChild(exp_link_element)
+    add_data_element.appendChild(exp_link_element)
 
+    action_element.appendChild(add_data_element)
     return action_element
 
 
@@ -212,7 +212,6 @@ def generate_run_action(run, main_doc):
     spuid_element.appendChild(main_doc.createTextNode(run['run_acc']))
     identifier_element.appendChild(spuid_element)
     add_files_element.appendChild(identifier_element)
-    action_element.appendChild(add_files_element)
 
     # experiment link
     run_link_element = main_doc.createElement("RUN_LINK")
@@ -224,8 +223,9 @@ def generate_run_action(run, main_doc):
     url_element.appendChild(main_doc.createTextNode(f"https://ngdc.cncb.ac.cn/gsa/browse/{run['cra_acc']}/{run['run_acc']}"))
     url_link_element.appendChild(url_element)
     run_link_element.appendChild(url_link_element)
-    action_element.appendChild(run_link_element)
+    add_files_element.appendChild(run_link_element)
 
+    action_element.appendChild(add_files_element)
     return action_element
 
 
