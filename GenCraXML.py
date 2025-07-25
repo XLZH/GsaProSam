@@ -255,10 +255,15 @@ def generate_cra_xml(cra_acc, xml_dir, mysql_con):
         return -1
 
     exp_action_list, run_action_list = [], []
+    exp_unique_set = set()
 
     for run in sample_exp_run:
-        exp_action = generate_experiment_action(run, main_doc)
-        exp_action_list.append(exp_action)
+        if run['exp_acc'] not in exp_unique_set:
+            exp_action = generate_experiment_action(run, main_doc)
+            exp_action_list.append(exp_action)
+            exp_unique_set.add(run['exp_acc'])
+
+        # generate the run action
         run_action = generate_run_action(run, main_doc)
         run_action_list.append(run_action)
 
