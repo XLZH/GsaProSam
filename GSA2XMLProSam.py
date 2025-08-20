@@ -572,22 +572,22 @@ def generate_action_tree(target_db, spuid, main_doc):
 def generate_submitter(user_info, main_doc):
     submitter = main_doc.createElement('Submitter')
 
-    # add username element
-    first_name_element = main_doc.createElement('First')
-    first_name_element.appendChild(main_doc.createTextNode(user_info['first_name']))
-    middle_name_element = main_doc.createElement('Middle')
-    middle_name_element.appendChild(main_doc.createTextNode(user_info['middle_name']))
-    last_name_element = main_doc.createElement('Last')
-    last_name_element.appendChild(main_doc.createTextNode(user_info['last_name']))
-
-    name_element = main_doc.createElement("Name")
-    name_element.appendChild(first_name_element)
-    name_element.appendChild(middle_name_element)
-    name_element.appendChild(last_name_element)
-
-    # add email element
-    email_element = main_doc.createElement("Email")
-    email_element.appendChild(main_doc.createTextNode(user_info['email']))
+    # # add username element
+    # first_name_element = main_doc.createElement('First')
+    # first_name_element.appendChild(main_doc.createTextNode(user_info['first_name']))
+    # middle_name_element = main_doc.createElement('Middle')
+    # middle_name_element.appendChild(main_doc.createTextNode(user_info['middle_name']))
+    # last_name_element = main_doc.createElement('Last')
+    # last_name_element.appendChild(main_doc.createTextNode(user_info['last_name']))
+    #
+    # name_element = main_doc.createElement("Name")
+    # name_element.appendChild(first_name_element)
+    # name_element.appendChild(middle_name_element)
+    # name_element.appendChild(last_name_element)
+    #
+    # # add email element
+    # email_element = main_doc.createElement("Email")
+    # email_element.appendChild(main_doc.createTextNode(user_info['email']))
 
     # add organization element
     organization_element = main_doc.createElement("Organization")
@@ -595,8 +595,8 @@ def generate_submitter(user_info, main_doc):
 
     # add the child elements to submitter
     submitter.appendChild(organization_element)
-    submitter.appendChild(email_element)
-    submitter.appendChild(name_element)
+    # submitter.appendChild(email_element)
+    # submitter.appendChild(name_element)
 
     return submitter
 
