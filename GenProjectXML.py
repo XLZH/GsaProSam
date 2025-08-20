@@ -175,7 +175,7 @@ def main():
     #     sys.stderr.write("usage: python3 GenProjectXML.py <project_accession_list> <output_xml_file>\n")
     #     sys.exit(-1)
 
-    args = ['', '/Users/xlzh/Project/NgdcProject/011DdbjShare/Data/prj_accession20250512.txt', 'GsaProject.xml']
+    args = ['', '/Users/xlzh/Project/NgdcProject/011DdbjShare/Data/project_accession20250820.txt', 'GsaProject20250820.xml']
 
     prj_list = read_project_accession(args[1])
     xml_path = args[2]

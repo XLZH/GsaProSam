@@ -133,7 +133,7 @@ def main():
     #     sys.stderr.write("usage: python3 GenSampleXML.py <sample_accession_list> <output_xml_file> <thread_num>\n")
     #     sys.exit(-1)
 
-    args = ['', '/Users/xlzh/Project/NgdcProject/011DdbjShare/Data/sample_accession20250512.txt', 'GsaSample.xml', 16]
+    args = ['', '/Users/xlzh/Project/NgdcProject/011DdbjShare/Data/sample_accession20250820.txt', 'GsaSample.xml', 8]
 
     sample_list = read_sample_accession(args[1])
     xml_path = args[2]
